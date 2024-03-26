@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HelloController {
-    @GetMapping("hello")
+    @GetMapping("hello") // /hello로 호출하면 여기로 연결
     public String hello(Model model){
          model.addAttribute("data","spring!!");
          return "hello";
