@@ -11,7 +11,7 @@ public class HelloController {
     @GetMapping("hello") // /hello로 호출하면 여기로 연결
     public String hello(Model model){
          model.addAttribute("data","spring!!");
-         return "hello";
+         return "hello"; //resources에 있는 hello.html에 가서 렌더링
     }
 
     @GetMapping("hello-mvc")
